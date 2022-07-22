@@ -1,4 +1,4 @@
-# Trabalhando-com-Android
+# Trabalhando-com-Android-Studio
 
 Bootcamp Santander - Digital Innovation One
 
