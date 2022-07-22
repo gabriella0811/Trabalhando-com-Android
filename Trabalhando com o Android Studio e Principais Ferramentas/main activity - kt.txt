@@ -1,0 +1,54 @@
+package com.example.helloworld
+
+import android.graphics.Color
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
+
+
+class MainActivity() : AppCompatActivity(){
+    private val resultado: Nothing?
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val calcular = null
+        val btcalcular : Nothing? = calcular
+        val result : Nothing? = resultado
+
+        btcalcular.setOnClickListener{
+            val it = Unit
+            it: View!
+            val nota1:Int = Integer.parseInt(nota1.text.toString())
+            val nota2:Int = Integer.parseInt(nota2.text.toString())
+            val media:Int  = (nota1 + nota2)/2
+            val faltas:Int = Integer.parseInt(faltas.text.toString())
+
+            if (media >=6 && faltas <=10){
+                resultado.setText("Aluno foi aprovado" + "\n" + "Nota final:" + media+ "\n" + "Faltas:" + faltas)
+                resultado.setTextColor(Color.GREEN)
+            }
+
+            else{
+                resultado.setText("Aluno foi reprovado" + "\n" + "Nota final:" + media+ "\n" + "Faltas:" + faltas)
+                resultado.setTextColor(Color.RED)
+            }
+        }
+    }
+}
+
+private fun Nothing?.setTextColor(green: Int) {
+
+}
+
+private fun Nothing?.setText(s: String) {
+
+}
+
+private fun Nothing?.setOnClickListener(function: () -> Unit) {
+
+}
